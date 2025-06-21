@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductImageEditCell" rowHeight="210" id="5bX-5u-9Zn" customClass="ProductImageEditCell" customModule="GoSnabby" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5bX-5u-9Zn" id="VYA-Ty-phN">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prod_detaisl_bg" translatesAutoresizingMaskIntoConstraints="NO" id="GAU-KV-XQ6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="210" id="kK3-Pz-uHG"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotDog" translatesAutoresizingMaskIntoConstraints="NO" id="pHe-QO-b1n">
+                        <rect key="frame" x="47" y="38.5" width="281" height="133.5"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil-create" translatesAutoresizingMaskIntoConstraints="NO" id="19F-Ln-6fJ">
+                        <rect key="frame" x="335" y="170" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="JEZ-nZ-QtP"/>
+                            <constraint firstAttribute="height" constant="40" id="iUj-8m-V1A"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="19F-Ln-6fJ" secondAttribute="bottom" id="1bE-qq-kK0"/>
+                    <constraint firstItem="GAU-KV-XQ6" firstAttribute="top" secondItem="VYA-Ty-phN" secondAttribute="top" id="8L5-OT-6vg"/>
+                    <constraint firstItem="pHe-QO-b1n" firstAttribute="width" secondItem="GAU-KV-XQ6" secondAttribute="width" multiplier="0.749333" id="Aka-eL-fEt"/>
+                    <constraint firstAttribute="trailing" secondItem="GAU-KV-XQ6" secondAttribute="trailing" id="G0q-0N-QcZ"/>
+                    <constraint firstAttribute="bottom" secondItem="GAU-KV-XQ6" secondAttribute="bottom" id="Ia4-QJ-lmY"/>
+                    <constraint firstItem="GAU-KV-XQ6" firstAttribute="leading" secondItem="VYA-Ty-phN" secondAttribute="leading" id="KFy-xV-R4A"/>
+                    <constraint firstAttribute="trailing" secondItem="19F-Ln-6fJ" secondAttribute="trailing" id="Tln-Te-FcL"/>
+                    <constraint firstItem="pHe-QO-b1n" firstAttribute="centerY" secondItem="GAU-KV-XQ6" secondAttribute="centerY" id="Vqt-cQ-3bP"/>
+                    <constraint firstItem="pHe-QO-b1n" firstAttribute="centerX" secondItem="GAU-KV-XQ6" secondAttribute="centerX" id="XzR-Jh-RXO"/>
+                    <constraint firstItem="pHe-QO-b1n" firstAttribute="height" secondItem="GAU-KV-XQ6" secondAttribute="height" multiplier="0.635714" id="oQ0-ya-cOH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="productImage" destination="pHe-QO-b1n" id="9Dv-dV-WJb"/>
+            </connections>
+            <point key="canvasLocation" x="-114" y="-122"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hotDog" width="312" height="139"/>
+        <image name="pencil-create" width="24" height="24"/>
+        <image name="prod_detaisl_bg" width="382" height="382"/>
+    </resources>
+</document>

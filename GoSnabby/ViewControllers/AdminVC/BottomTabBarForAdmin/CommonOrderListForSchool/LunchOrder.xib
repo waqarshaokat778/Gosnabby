@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DMSans-Medium.ttf">
+            <string>DMSans-Medium</string>
+        </array>
+        <array key="DMSans-Regular.ttf">
+            <string>DMSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LunchOrderCell" rowHeight="271" id="YFa-Pg-icc" customClass="LunchOrderCell" customModule="GoSnabby" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="571" height="271"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YFa-Pg-icc" id="k5B-1B-zSB">
+                <rect key="frame" x="0.0" y="0.0" width="571" height="271"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sVR-4R-djv">
+                        <rect key="frame" x="8" y="6" width="555" height="46"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="g8g-8R-xJE">
+                                <rect key="frame" x="0.0" y="0.0" width="555" height="46"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Z1o-zJ-mzG">
+                                        <rect key="frame" x="0.0" y="0.0" width="275.5" height="46"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfi-LV-oT8">
+                                                <rect key="frame" x="0.0" y="0.0" width="275.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="17"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="122" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qh-uX-u4C">
+                                                <rect key="frame" x="0.0" y="23.5" width="275.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="2fn-D0-iqS">
+                                        <rect key="frame" x="279.5" y="0.0" width="275.5" height="46"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhf-19-eAu">
+                                                <rect key="frame" x="0.0" y="0.0" width="275.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="17"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basat Butt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsJ-DK-UOf">
+                                                <rect key="frame" x="0.0" y="23.5" width="275.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="k8z-rm-LDf">
+                        <rect key="frame" x="8" y="62" width="555" height="46"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Wr3-dZ-O3l">
+                                <rect key="frame" x="0.0" y="0.0" width="555" height="46"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="zZi-p7-gac">
+                                        <rect key="frame" x="0.0" y="0.0" width="275.5" height="46"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYl-PP-bxp">
+                                                <rect key="frame" x="0.0" y="0.0" width="275.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="17"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7prf66z0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Eu-4a-tRW">
+                                                <rect key="frame" x="0.0" y="23.5" width="275.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="mro-ef-Trd">
+                                        <rect key="frame" x="279.5" y="0.0" width="275.5" height="46"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBN-bv-ZQ5">
+                                                <rect key="frame" x="0.0" y="0.0" width="275.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="17"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="credit_card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwh-pf-Bf1">
+                                                <rect key="frame" x="0.0" y="23.5" width="275.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dwA-Vu-cHp">
+                        <rect key="frame" x="8" y="118" width="555" height="46"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="2fp-jp-kNF">
+                                <rect key="frame" x="0.0" y="0.0" width="555" height="46"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="k8F-EI-piP">
+                                        <rect key="frame" x="0.0" y="0.0" width="275.5" height="46"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRQ-f0-CQZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="275.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="17"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22 Feb, 2021" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voJ-A4-PiW">
+                                                <rect key="frame" x="0.0" y="23.5" width="275.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="teb-r5-L94">
+                                        <rect key="frame" x="279.5" y="0.0" width="275.5" height="46"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Receiving Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKP-en-v1H">
+                                                <rect key="frame" x="0.0" y="0.0" width="275.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="17"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 Feb, 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2F-Fa-UFQ">
+                                                <rect key="frame" x="0.0" y="23.5" width="275.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kPM-gm-OZ4">
+                        <rect key="frame" x="8" y="174" width="555" height="42"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doU-78-t9m">
+                                <rect key="frame" x="0.0" y="0.0" width="555" height="22.5"/>
+                                <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRm-gN-ihR">
+                                <rect key="frame" x="0.0" y="24.5" width="555" height="22.5"/>
+                                <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nRm-gN-ihR" secondAttribute="trailing" id="1GV-pA-UjM"/>
+                            <constraint firstAttribute="trailing" secondItem="doU-78-t9m" secondAttribute="trailing" id="7ij-3G-jjP"/>
+                            <constraint firstItem="nRm-gN-ihR" firstAttribute="leading" secondItem="kPM-gm-OZ4" secondAttribute="leading" id="EAH-Bc-2z5"/>
+                            <constraint firstAttribute="height" constant="42" id="WjS-Bc-JnR"/>
+                            <constraint firstItem="doU-78-t9m" firstAttribute="top" secondItem="kPM-gm-OZ4" secondAttribute="top" id="nfV-TB-OjE"/>
+                            <constraint firstItem="doU-78-t9m" firstAttribute="leading" secondItem="kPM-gm-OZ4" secondAttribute="leading" id="upR-Ze-PWt"/>
+                            <constraint firstItem="nRm-gN-ihR" firstAttribute="top" secondItem="doU-78-t9m" secondAttribute="bottom" constant="2" id="usa-kQ-Bum"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bY7-3L-0Kv">
+                        <rect key="frame" x="8" y="227" width="563" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$ 23.32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UO4-6P-dXI">
+                                <rect key="frame" x="0.0" y="9" width="552" height="21.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DMSans-Medium" family="DM Sans" pointSize="19"/>
+                                <color key="textColor" red="0.6649362445" green="0.25348457689999998" blue="0.57343584299999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYa-ac-QYl">
+                                <rect key="frame" x="423" y="0.0" width="140" height="44"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="NFc-Pa-FFW">
+                                        <rect key="frame" x="92" y="6" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="GS0-8E-OtU"/>
+                                            <constraint firstAttribute="height" constant="32" id="XUq-bx-8G0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoD-hc-GhD">
+                                        <rect key="frame" x="31" y="11" width="45" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="NFc-Pa-FFW" secondAttribute="trailing" constant="16" id="1Ih-DO-U0u"/>
+                                    <constraint firstItem="NFc-Pa-FFW" firstAttribute="centerY" secondItem="uYa-ac-QYl" secondAttribute="centerY" id="4eH-9P-kHu"/>
+                                    <constraint firstAttribute="height" constant="44" id="8oy-xJ-pEu"/>
+                                    <constraint firstItem="GoD-hc-GhD" firstAttribute="centerY" secondItem="uYa-ac-QYl" secondAttribute="centerY" id="XFD-k0-4Dg"/>
+                                    <constraint firstAttribute="width" constant="140" id="Xu8-D6-vXq"/>
+                                    <constraint firstItem="NFc-Pa-FFW" firstAttribute="leading" secondItem="GoD-hc-GhD" secondAttribute="trailing" constant="16" id="tlZ-cY-TFJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uYa-ac-QYl" firstAttribute="top" secondItem="bY7-3L-0Kv" secondAttribute="top" id="72i-zx-35a"/>
+                            <constraint firstAttribute="trailing" secondItem="uYa-ac-QYl" secondAttribute="trailing" id="hUD-bo-TgM"/>
+                            <constraint firstAttribute="bottom" secondItem="uYa-ac-QYl" secondAttribute="bottom" id="nSP-IR-lk2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="k8z-rm-LDf" firstAttribute="leading" secondItem="k5B-1B-zSB" secondAttribute="leading" constant="8" id="7Uj-7v-Lww"/>
+                    <constraint firstAttribute="trailing" secondItem="k8z-rm-LDf" secondAttribute="trailing" constant="8" id="7dc-fb-0Sg"/>
+                    <constraint firstItem="sVR-4R-djv" firstAttribute="leading" secondItem="k5B-1B-zSB" secondAttribute="leading" constant="8" id="99r-qL-9z4"/>
+                    <constraint firstAttribute="bottom" secondItem="bY7-3L-0Kv" secondAttribute="bottom" id="JJL-Wt-KZE"/>
+                    <constraint firstItem="k8z-rm-LDf" firstAttribute="top" secondItem="sVR-4R-djv" secondAttribute="bottom" constant="10" id="Q1Q-iN-wTd"/>
+                    <constraint firstItem="sVR-4R-djv" firstAttribute="top" secondItem="k5B-1B-zSB" secondAttribute="top" constant="6" id="Xmg-sL-0oV"/>
+                    <constraint firstItem="dwA-Vu-cHp" firstAttribute="leading" secondItem="k5B-1B-zSB" secondAttribute="leading" constant="8" id="YWX-fm-NFP"/>
+                    <constraint firstAttribute="trailing" secondItem="sVR-4R-djv" secondAttribute="trailing" constant="8" id="a6p-jf-Hb7"/>
+                    <constraint firstAttribute="trailing" secondItem="dwA-Vu-cHp" secondAttribute="trailing" constant="8" id="cQ2-0V-7Er"/>
+                    <constraint firstItem="dwA-Vu-cHp" firstAttribute="top" secondItem="k8z-rm-LDf" secondAttribute="bottom" constant="10" id="fGN-0O-ufO"/>
+                    <constraint firstAttribute="trailing" secondItem="kPM-gm-OZ4" secondAttribute="trailing" constant="8" id="j5J-Hs-jjw"/>
+                    <constraint firstAttribute="trailing" secondItem="bY7-3L-0Kv" secondAttribute="trailing" id="j7W-2e-uZ1"/>
+                    <constraint firstItem="kPM-gm-OZ4" firstAttribute="top" secondItem="dwA-Vu-cHp" secondAttribute="bottom" constant="10" id="kI7-ZX-PeN"/>
+                    <constraint firstItem="bY7-3L-0Kv" firstAttribute="leading" secondItem="k5B-1B-zSB" secondAttribute="leading" constant="8" id="mQU-qp-7hS"/>
+                    <constraint firstItem="kPM-gm-OZ4" firstAttribute="leading" secondItem="k5B-1B-zSB" secondAttribute="leading" constant="8" id="w8U-00-wvH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnContainer" destination="uYa-ac-QYl" id="0WW-Yv-Rca"/>
+                <outlet property="container" destination="k5B-1B-zSB" id="5fr-vC-LI4"/>
+                <outlet property="imgbtnIndicator" destination="NFc-Pa-FFW" id="069-3s-Hq9"/>
+                <outlet property="lblActionTitle" destination="GoD-hc-GhD" id="VSC-gA-70n"/>
+                <outlet property="lblCustomerName" destination="zsJ-DK-UOf" id="ChJ-9K-CoY"/>
+                <outlet property="lblOrderDate" destination="voJ-A4-PiW" id="tKD-x1-Ea9"/>
+                <outlet property="lblPaymentType" destination="jwh-pf-Bf1" id="zOl-X6-zc7"/>
+                <outlet property="lblPrice" destination="UO4-6P-dXI" id="TCS-SB-B2B"/>
+                <outlet property="lblReceivingDate" destination="O2F-Fa-UFQ" id="pn0-pX-8G6"/>
+                <outlet property="lblStatus" destination="nRm-gN-ihR" id="XBi-yl-IEh"/>
+                <outlet property="lblTransID" destination="5Eu-4a-tRW" id="KM7-eu-Gqo"/>
+                <outlet property="lblorderNo" destination="8qh-uX-u4C" id="pm6-QT-Y1X"/>
+                <outlet property="orderDateLbl" destination="XRQ-f0-CQZ" id="EhM-pM-Mpg"/>
+                <outlet property="paymentTypeLbl" destination="aBN-bv-ZQ5" id="kiA-hg-LHJ"/>
+                <outlet property="receivingDataLbl" destination="hKP-en-v1H" id="4lJ-QG-3uW"/>
+                <outlet property="statusContainer" destination="kPM-gm-OZ4" id="P16-kF-sGF"/>
+                <outlet property="transIdLbl" destination="EYl-PP-bxp" id="lqP-YL-oiE"/>
+            </connections>
+            <point key="canvasLocation" x="-157.24637681159422" y="-15.736607142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_right" width="30" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

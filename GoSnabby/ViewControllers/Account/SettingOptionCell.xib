@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DMSans-Regular.ttf">
+            <string>DMSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingOptionCell" rowHeight="48" id="kiE-Cl-kz2" customClass="SettingOptionCell" customModule="GoSnabby" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="231" height="48"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kiE-Cl-kz2" id="di1-nx-cqh">
+                <rect key="frame" x="0.0" y="0.0" width="231" height="48"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoutIcon" translatesAutoresizingMaskIntoConstraints="NO" id="jdf-KT-AwF">
+                        <rect key="frame" x="4" y="12" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="2V3-PT-p5k"/>
+                            <constraint firstAttribute="height" constant="24" id="8ZW-sr-xi4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qj-pB-N88">
+                        <rect key="frame" x="44" y="11.5" width="60.5" height="25"/>
+                        <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Kpw-Nk-cXe">
+                        <rect key="frame" x="199" y="13" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="IdW-3D-x28"/>
+                            <constraint firstAttribute="width" constant="22" id="lsc-2m-WeW"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Kpw-Nk-cXe" secondAttribute="trailing" constant="10" id="65j-4G-uve"/>
+                    <constraint firstAttribute="bottom" secondItem="jdf-KT-AwF" secondAttribute="bottom" constant="12" id="Qbw-fL-yE5"/>
+                    <constraint firstItem="Kpw-Nk-cXe" firstAttribute="centerY" secondItem="5qj-pB-N88" secondAttribute="centerY" id="YUH-7P-sha"/>
+                    <constraint firstItem="jdf-KT-AwF" firstAttribute="top" secondItem="di1-nx-cqh" secondAttribute="top" constant="12" id="abY-9E-K32"/>
+                    <constraint firstItem="5qj-pB-N88" firstAttribute="leading" secondItem="jdf-KT-AwF" secondAttribute="trailing" constant="16" id="ea7-UB-Heu"/>
+                    <constraint firstItem="5qj-pB-N88" firstAttribute="centerY" secondItem="jdf-KT-AwF" secondAttribute="centerY" id="hsa-aG-shz"/>
+                    <constraint firstItem="jdf-KT-AwF" firstAttribute="leading" secondItem="di1-nx-cqh" secondAttribute="leading" constant="4" id="ugm-eQ-gCw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="optionIcon" destination="jdf-KT-AwF" id="7Dg-9Q-9K5"/>
+                <outlet property="optionName" destination="5qj-pB-N88" id="CyA-rN-cL8"/>
+            </connections>
+            <point key="canvasLocation" x="-1413.768115942029" y="675"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="back arrow" width="8.5" height="14"/>
+        <image name="logoutIcon" width="40" height="40"/>
+    </resources>
+</document>
